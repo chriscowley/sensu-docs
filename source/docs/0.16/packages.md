@@ -107,6 +107,11 @@ hard-code the value to `5` or `6`.
 **IMPORTANT NOTE** - Fedora systems will require hard-coding the
   $releasver variable. Choosing `6` should be fine for at least Fedora
   16 and 17. Later versions will be tested as necessary.
+  
+**ANOTHER IMPORTANT NOTE** - If you are installing on RHEL7
+  there is currently no repo available. Forcing `6` should be fine.
+  If installing via Puppet, you need to force the URL using the 
+  `repo_source` parameter.
 
 ### Step #2 - Install Sensu {#yum-install-sensu}
 
